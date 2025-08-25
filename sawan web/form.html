@@ -1,0 +1,234 @@
+<html>
+<head>
+     <script>
+        function check(){
+            name=document.frm.na.value;
+                r=document.frm.rn.value;
+                p= document.frm.p.value;
+                en = document.frm.en.value;
+                add = document.frm.add.value;
+
+               if (name.length === 0 || name === "") {
+                alert("name must be filled");
+                document.frm.na.focus();
+                return;
+               }
+
+               if(name.length<3 || name.length>8) {
+                alert("name can not be more than 8 char or less than 3");
+                document.frm.na.focus();
+                return;
+               }
+
+               if(r.length === 0 )
+               {
+                alert("class can't be blank");
+                document.frm.rn.focus();
+                return;
+               }
+
+             if(r.length === 0 )
+               {
+                alert("class can't be blank");
+                document.frm.f.focus();
+                return;
+               }
+
+                   if(f.length === 0 )
+               {
+                alert("class can't be blank");
+                document.frm.m.focus();
+                return;
+               }
+
+                 if(m.length === 0 )
+               {
+                alert("class can't be blank");
+                document.frm.p.focus();
+                return;
+               }
+
+                  if(e.length === 0 )
+               {
+                alert("class can't be blank");
+                document.frm.e.focus();
+                return;
+               }
+
+                  if(add.length === 0 )
+               {
+                alert("class can't be blank");
+                document.frm.add.focus();
+                return;
+               }
+
+
+                  if(add.length<0 || hindi.length<30) {
+                 alert("please enter a 1 to 10 number only");
+                document.frm.add.focus();
+                return;
+               }
+
+
+                  if(add.length<0 || hindi.length<30) {
+                 alert("please enter a 1 to 10 number only");
+                document.frm.add.focus();
+                return;
+               }
+
+
+        
+                 if (r >=0 && r <= 12) {
+        alert("Submit done");
+        document.frm.submit();
+      } else {
+        alert("Class must be between 7 and 10");
+        document.frm.rn.focus();
+      }
+}
+        </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+
+        .font {
+            font-style: italic;
+            background-color: skyblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        table {
+            margin: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        button {
+            width: 200px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<style>
+    div.font{
+        letter-spacing: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="font">
+             <img src="C:\Users\DELL\Desktop\images\css\images/sawan4.png" alt="Cinque Terre" width="90px" height="70px">
+            <h1>SAWAN PUBLIC SCHOOL</h1>
+            <h2>NEW ADDMISSION FOR STUDENTS</h2>
+        </div>
+<br><br>
+        <form>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" placeholder="Enter your name" name="na"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" placeholder="Enter your last name" name="rn"></td>
+                </tr>
+                <tr>
+                    <td>Father's Name:</td>
+                    <td><input type="text" placeholder="Enter father's name" name="f"></td>
+                </tr>
+                <tr>
+                    <td>Mother's Name:</td>
+                    <td><input type="text" placeholder="Enter mother's name" name="m"></td>
+                </tr>
+                  <tr>
+                    <td>class:</td>
+                    <td>
+                        <select id="class" name="class">
+                            <option value="">Select</option>
+                            <option value="NURSERY">NURSERY</option>
+                            <option value="L.K.G">L.K.G</option>
+                            <option value="U.K.G">U.K.G</option>
+                            <option value="1ST">1ST</option>
+                            <option value="2ND">2ND</option>
+                            <option value="3RD">3RD</option>
+                            <option value="4TH">4TH</option>
+                            <option value="5TH">5TH</option>
+                            <option value="6TH">6TH</option>
+                            <option value="7TH">7TH</option>
+                            <option value="8TH">8TH</option>
+                            <option value="9TH">9TH</option>
+                            <option value="10TH">10TH</option>
+                            <option value="11TH">11/ARTS</option>
+                             <option value="11TH">11/COMMERCE</option>
+                            <option value="11TH">11/NON-MEDICAL</option>
+                            <option value="11TH">11/MEDICAL</option>
+                            <option value="12TH">12/ARTS</option>
+                             <option value="12TH">12/COMMERCE</option>
+                              <option value="12TH">12/NON-MEDICAL</option>
+                               <option value="12TH">12/MEDICAL</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <select id="gender" name="gender">
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="number" id="phone" name="p" placeholder="Enter phone number"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="Enter your email" name="e"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea id="address" name="address" rows="4" placeholder="Enter address" name="add"></textarea></td>
+                </tr>
+            </table>
+              <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <div class="button" onclick="check()"></div>
+<button onclick="window.location.href='index.html'" class="back-button">Back to home</button>
+  </div>
+    </div>

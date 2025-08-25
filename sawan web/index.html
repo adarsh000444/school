@@ -1,0 +1,595 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <title>School Website</title>
+  <link rel="stylesheet" href="abc1.css" </head>
+
+<body>
+  <a name="button"></a>
+  <header>
+    <img src="C:\Users\DELL\Desktop\images\css\images/sawan4.png" alt="Cinque Terre" width="120px" height="120px">
+
+    <h1 class="logo">Sawan public school</h1>
+    <div class="space">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="">Home</a></li>&nbsp;
+        &nbsp;
+        <li><a href="about.html">About</a>
+          &nbsp;
+          &nbsp;&nbsp;
+        <li><a href="#contact">Contact</a></li>
+        &nbsp; &nbsp; <li><a href="gallery.html">Gallery</a></li>
+        &nbsp;&nbsp; <li><a href="form.html">Admission form</a></li> &nbsp; &nbsp; &nbsp;
+        <li><button type="button" class="login" onclick="redirectToLogin()">Login</button></li>
+
+
+
+      </ul>
+    </div>
+    </nav>
+  </header><br>
+
+  <div class="home2">
+    <br><br>
+    <div class="home1">
+      <h1>HOME</h1>
+      <p>The future belongs to the consistent. Not the talented. Not the lucky. But the one who shows up, Even when it's
+        hard. The grind may be quiet, but its results are loud. Consistency builds empires that talent alone can't
+        sustain.</p>
+    </div>
+    <div class="slider">
+      <div class="slides">
+        <img src="C:\Users\DELL\Desktop\images\css\images/child.jpg" alt="Cinque Terre" width="99%" height="80%">
+        <img src="C:\Users\DELL\Desktop\images\css\images/child2.jpg" alt="Cinque Terre" width="99%" height="80%">
+        <img src="C:\Users\DELL\Desktop\images\css\images/child3.jpg" alt="Cinque Terre" width="150%" height="100%">
+        <img src="C:\Users\DELL\Desktop\images\css\images/child4.jpg" alt="Cinque Terre" width="150%" height="100%">
+        <img src="C:\Users\DELL\Desktop\images\css\images/child5.jpg" alt="Cinque Terre" width="150%" height="100%">
+        <img src="C:\Users\DELL\Desktop\images\css\images/child6.jpg" alt="Cinque Terre" width="150%" height="100%">
+        <img src="C:\Users\DELL\Desktop\images\css\images/child7.jpg" alt="Cinque Terre" width="150%" height="100%">
+      </div>
+    </div>
+  </div>
+  <script>
+    function redirectToLogin() {
+      window.location.href = "demo8.html";
+    }
+
+  </script>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    div.home2 {
+      background-color: rgb(218, 193, 162);
+    }
+
+    div.home1 {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      animation: scroll 30s linear infinite;
+      padding-top: 50px;
+      right: 10px;
+
+
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(100%);
+      }
+
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+
+    .slides {
+      display: flex;
+      width: 500%;
+      animation: slide 400s infinite;
+      position: relative;
+    }
+
+    .slides img {
+      width: 100%;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0%);
+      }
+
+      20% {
+        transform: translateX(-100%);
+      }
+
+      40% {
+        transform: translateX(-200%);
+      }
+
+      60% {
+        transform: translateX(-300%);
+      }
+
+      80% {
+        transform: translateX(-400%);
+      }
+
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  </style>
+  <style>
+    h6 {
+      text-align: justify;
+      padding: 100p;
+
+    }
+
+    div.vishal {
+      padding: 70px;
+      font-style: bold;
+    }
+
+    .nav-links li a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .nav-links li a {
+      display: inline-block;
+      /* Ensures better control of spacing */
+      padding-top: 10px;
+      /* Adds space above the text */
+    }
+
+    .nav-links li {
+      margin-bottom: px;
+    }
+
+    .login {
+      margin-top: 20px;
+    }
+
+    .nav-links li {
+      padding-bottom: 30px;
+    }
+
+    .login {
+      padding-bottom: -30px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #55e672;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #92e2ad;
+    }
+
+    div.button {
+      padding: 9px;
+    }
+
+    div.font1 {
+      margin-top: 10px;
+      padding: 20px;
+    }
+
+    body {
+      padding-top: 80px;
+      /* Adjust this based on the height of your header */
+    }
+
+    body {
+      padding: 10px;
+      background-color: #ececec;
+    }
+
+    back-button {
+      position: absolute;
+      text-indent: -15px;
+      padding: 5px 0 5px 10px;
+      width: 53px;
+      /* Adjust based on label length */
+      overflow: auto;
+    }
+
+    label {
+      display: block;
+      width: auto;
+      line-height: 26px;
+      font-size: 12px;
+      font-weight: 900;
+      font-family: helvetica, sans-serif;
+      color: #fff;
+      text-decoration: none;
+      background-color: #d3d588;
+      /* Button background color */
+      padding: 8px 16px;
+      /* Button padding */
+      border-radius: 5px;
+      /* Rounded corners */
+    }
+
+    label:hover {
+      background-color: #ddd;
+      /* Hover background color */
+      color: rgb(172, 238, 240);
+      /* Hover text color */
+    }
+
+    li:hover {
+      background-color: rgb(176, 223, 235);
+      size: 30px;
+      padding: 10px;
+      margin: 10px;
+      font-style: italic;
+    }
+
+    .logo1:hover {
+      background-color: #04AA6D;
+      backface-visibility: hidden;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: url('C:\Users\DELL\Desktop\images\css\images/sawan4.png');
+      /* Add your image file */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      /* Ensures it spans across the screen */
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li {
+      display: inline;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    div.cols {
+      div {
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    }
+
+    div.c {
+      font-style: oblique;
+    }
+
+    div.contact {
+      margin-bottom: 100px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+
+    .topnav {
+      overflow: hidden;
+      background-color: #d23d3d;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: #d52a2a;
+      color: rgb(172, 3, 3);
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 15px;
+    }
+
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .column1 {
+      float: left;
+      width: 40%;
+      padding: 50px;
+      margin-left: 90px;
+      margin-right: 10px;
+    }
+
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+
+  <style>
+    div.contact1 {
+      background-color: #007bff;
+      margin: 10px;
+    }
+
+    div.contact2 {
+      background-color: rgb(54, 53, 53);
+      margin: 30px;
+    }
+
+    .p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    div.column {
+      background-color: ;
+    }
+
+    .tel-icon {
+      width: 24px;
+      height: 24px;
+      margin: 0px;
+      cursor: pointer;
+      padding-top: -20px;
+
+    }
+
+    .tel-icon:hover {
+      opacity: 0.8;
+    }
+
+    .email-icon {
+      width: 24px;
+      height: 24px;
+      margin: -7px;
+      cursor: pointer;
+    }
+
+    .email-icon:hover {
+      opacity: 0.8;
+    }
+
+    .location {
+      width: 24px;
+      height: 24px;
+      margin: -7px;
+      cursor: pointer;
+    }
+
+    .location:hover {
+      opacity: 0.8;
+    }
+
+    div.vishal3 {
+      background-attachment: fixed;
+      background-color: #3c3c3a;
+    }
+
+    h1.vvv {
+      background-color: hsl(103, 87%, 68%);
+    }
+
+    .goToTop {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .goToTop:hover {
+      background-color: #b2cfef;
+    }
+
+    .design {
+      align-items: bottom;
+      margin: 80px;
+      margin-top: 10px;
+    }
+
+    .map {
+      margin-right: -80%;
+
+    }
+  </style>
+  <br>
+  <a name="bottom"></a>
+  <h1 class="vvv">Scholar ship </h1>
+  <div class="font1">
+    <img src="C:\Users\DELL\Desktop\images\css\images\vvv.jpg" alt="Cinque Terre" width="99%" height="80%">
+    <br><br><br><br>
+  </div>
+  <div>
+    <div class="header">
+      <h1>Introduction of Sawan Public School (Ldh) </h1>
+      <p>.</p>
+    </div>
+
+    <div class="topnav">
+      &nbsp;<a href="">Activities</a>
+      &nbsp;<a href="">School Facilities</a>
+      <a href="">Student & Parent Testimonials</a>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h2>Activities</h2>
+        <p>Our school provides various extracurricular activities to foster the creativity and skills of our students.
+        </p>
+        <ul>
+          <li>Sports Competitions</li>
+          <li>Debates & Public Speaking</li>
+          <li>Science & Innovation Exhibitions</li>
+          <li>Annual Cultural Programs</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2>School Facilities</h2>
+        <p>We ensure the best environment for students by providing modern infrastructure:</p>
+        <ul>
+          <li>State-of-the-Art Classrooms</li>
+          <li>Computer & Science Labs</li>
+          <li>Library with Digital Resources</li>
+          <li>Playground & Sports Facilities</li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h2>Student & Parent Testimonials</h2><br>
+        <blockquote>
+          "Sawan Public School has transformed my child's education and given them the confidence to succeed!" — Parent
+          Review
+        </blockquote>
+        <blockquote>
+          "The teachers are really supportive, and I love the learning environment." — Student Review
+        </blockquote>
+      </div>
+    </div>
+    <div>
+
+    </div>
+    <div class="vishal3">
+      <div class="contact1"><br><br>
+        <p align="center">ADDMISSION OPEN 2025-26</p>
+      </div>
+      <br><br><br>
+      <div class="vishal5">
+        <div class="column1"><br><br><br>
+          <h2>About our school</h2><br>
+          <p>Sawan Public School has always had<br> an excellent reputation in the 20 years since<br> it was opened in
+            2002</p>
+          <br>
+          <h3 align="center"> THIS VIDEO PLAY TO ROLE OF SCHOOL IN OUR LIFE</h3><br>
+          <video width="400" height="300" controls autoplay>
+            <source src="D:\main folder\images\vv.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column1"><br><br><br>
+          <h3 align="center">Contact of Sawan Public School</h3><br>
+          <h3>Get in touch</h3><br>
+          <ul>
+            <i class="fas fa-phone phone-icon">
+              Telephone: 0161-2781021</i><br>
+            <br><br>
+            <img src="C:\Users\DELL\Desktop\images\css\images\tel.WEBP" alt="tel Icon" class="tel-icon">
+            Mobile: +91 96467 81021</i><br>
+            <br><br>
+            <img src="C:\Users\DELL\Desktop\images\css\images\email.png" alt="Email Icon" class="email-icon">
+            Email: SawanPublicSchool@gmail.com
+            <br><br><br>
+            <img src="C:\Users\DELL\Desktop\images\css\images\location.png" alt="location" class="location">
+            Sawan Public School, New Anandpuri Colony, Govind Pura, Ludhiana
+          </ul>
+          <img src="C:\Users\DELL\Desktop\images\css\images\s7.png" alt="tel Icon" class="tel-icon">
+          All Copy Right 2025-2026
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="contact2">
+    <p align="center">v</p>
+  </div>
+  <br><br>
+  <a name="contact"></a>
+  <div class="button">
+    <a href="#" class="goToTop">GO To top</a>
+    <div class="design">
+      <h3>Designed by vishal</h3>
+    </div>
+    <div class="map1">
+      <h2>Map of School</h2>
+    </div>
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.2543660442414!2d75.84681523881098!3d30.942905114952087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a85dcdaf0b5c3%3A0xb3478c3e90f53b2e!2sRaju%20Gupta%20Vegetable!5e0!3m2!1sen!2sin!4v1754929950426!5m2!1sen!2sin"
+        width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+
+</html>
